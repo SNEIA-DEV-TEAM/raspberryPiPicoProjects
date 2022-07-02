@@ -1,6 +1,6 @@
 # SNEIA's Dev Team :)
 # Original code by: https://github.com/WowNotSmart
-# https://github.com/SNEIA-DEV-TEAM/raspberryPiPicoProjects/plugAndRun/ledTicking.py
+# https://github.com/SNEIA-DEV-TEAM/raspberryPiPicoProjects/blob/main/plugAndRun/ledTicking.py
 
 from machine import Pin
 import time, random
