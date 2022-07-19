@@ -1,3 +1,8 @@
+# SNEIA's Dev Team :)
+# Original code by: https://github.com/WowNotSmart
+# https://github.com/SNEIA-DEV-TEAM/raspberryPiPicoProjects/blob/main/readyToRun/modules/blinck.py
+# Date: 19/07/2022
+
 #-----------------------------------------------------------------
 # File: The microcontroller has a led and this is connected to its
 # pin 25, here we will see how to access this pin and alter its
@@ -6,30 +11,22 @@
 # control the flashing time of the LED.
 #-----------------------------------------------------------------
 
-#Import library that allows to control the physical pins of the Pico and a time controller.
 from machine import Pin, Timer
 
-#We use this function to assign one of the pins of the Pico inside a variable that we can
-#manipulate, we select the pin that contains the LED and we indicate that this pin is to
-#send data externally to the LED.
+#Indicate the pin we are going to manipulate and what we are going to do with it.
 led = Pin(25, Pin.OUT)
 
-#Initialize boolean variable that will define the state of the LED in each iteration of the loop.
 led_state = True
 
-#Store in a variable the function that initializes the time counter for the blinker
 tim = Timer()
 
 #Function that constantly changes the status of the LED
 def tick(timer):
-    #Bring variables from outside the function to inside it to be able to manipulate them,
-    #since due to scope issues this would not be possible normally.
+    #Bring global variables to the function to avoid scope problems
     global led, led_state
     
-    #Invert the state of the LED, if it is on then it will turn it off and vice versa.
     led_state = not led_state
     
-    #Update led value
     led.value(led_state)
 
 #Call the function "tick" with a certain frequency so that each time it is
