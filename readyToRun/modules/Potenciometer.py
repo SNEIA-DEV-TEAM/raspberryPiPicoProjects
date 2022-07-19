@@ -1,6 +1,6 @@
 # SNEIA's Dev Team :)
 # Original code by: https://github.com/WowNotSmart
-# https://github.com/SNEIA-DEV-TEAM/raspberryPiPicoProjects/blob/main/readyToRun/modules/blinck.py
+# https://github.com/SNEIA-DEV-TEAM/raspberryPiPicoProjects/blob/main/readyToRun/modules/Potenciometer.py
 # Date: 19/07/2022
 
 #-----------------------------------------------------------------
