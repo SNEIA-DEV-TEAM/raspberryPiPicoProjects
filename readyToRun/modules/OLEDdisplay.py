@@ -14,7 +14,7 @@ import framebuf, time
 import utime
 
 #To turn off the display change the value to false and re-run the code
-runningStatus = False
+runningStatus = True
 
 oledWidth = 128
 oledHeight = 64
